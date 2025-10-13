@@ -23,7 +23,8 @@ public class RegistorCustomerModel {
     @Column(name="phone",nullable = false,unique = true)
     private String phone;
 
-
+    @Column(name = "password" ,nullable=false)
+    private String password;
 
     public String getPhone() {
         return phone;
@@ -57,4 +58,11 @@ public class RegistorCustomerModel {
         this.email = email;
     }
 
+    public String getPassword() {
+        return password;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
+    }
 }
